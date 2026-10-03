@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Community Charity | Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="brand-logo">HC</span>
+                <div class="brand-text">
+                    <h1>Hope Community Charity</h1>
+                    <p>Connecting people to meaningful causes</p>
+                </div>
+            </div>
+            <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="./index.html" class="active-page">Home</a></li>
+                <li><a href="./search.html">Search Events</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./impact.html">Our Impact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="breadcrumb"></div>
+    <main>
+        <!-- HERO -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <img src="https://picsum.photos/id/1060/1600/600" alt="Charity events hero" data-lightbox>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-content-inner">
+                    <span class="eyebrow">Charity Event Platform</span>
+                    <h2>Find Your Next Charity Event</h2>
+                    <p class="hero-sub">
+                        Join community runs, gala dinners, silent auctions and charity concerts.
+                        Every ticket helps support homeless families, children and vulnerable Australians.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#hot‑events" class="btn btn-primary">Browse Events</a>
+                        <a href="#impact" class="btn btn-secondary">View Impact</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="128000">0</span>
+                            <span class="stat-label">Funds Raised</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-label">Active Events</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="2460">0</span>
+                            <span class="stat-label">Participants</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="12">0</span>
+                            <span class="stat-label">Community Partners</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- QUICK CATEGORIES -->
+        <section class="categories-section">
+            <div class="section-head">
+                <h3>Browse by Category</h3>
+                <p>Choose an event type that matches your interest.</p>
+            </div>
+            <div class="category-grid">
+                <a href="./search.html?cat_id=1" class="category-card">
+                    <img src="https://picsum.photos/id/1060/600/400" alt="Fun Run">
+                    <div class="category-overlay">
+                        <h4>Fun Run</h4>
+                        <p>Community sport events</p>
+                    </div>
+                </a>
+                <a href="./search.html?cat_id=2" class="category-card">
+                    <img src="https://picsum.photos/id/1067/600/400" alt="Gala Dinner">
+                    <div class="category-overlay">
+                        <h4>Gala Dinner</h4>
+                        <p>Formal fundraising nights</p>
+                    </div>
+                </a>
+                <a href="./search.html?cat_id=3" class="category-card">
+                    <img src="https://picsum.photos/id/1059/600/400" alt="Silent Auction">
+                    <div class="category-overlay">
+                        <h4>Silent Auction</h4>
+                        <p>Bid for good causes</p>
+                    </div>
+                </a>
+                <a href="./search.html?cat_id=4" class="category-card">
+                    <img src="https://picsum.photos/id/1054/600/400" alt="Charity Concert">
+                    <div class="category-overlay">
+                        <h4>Charity Concert</h4>
+                        <p>Live music for charity</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Hot Events 横向轮播 新增 -->
+        <section id="hot‑events" class="home-carousel-section">
+            <div class="container">
+                <h2>Hot Charity Events</h2>
+                <div class="carousel-wrap">
+                    <button class="carousel-btn prev-btn">❮</button>
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- JS动态渲染卡片 -->
+                    </div>
+                    <button class="carousel-btn next-btn">❯</button>
+                </div>
+            </div>
+        </section>
+        <!-- IMPACT -->
+        <section id="impact" class="impact-section">
+            <div class="impact-container">
+                <div class="impact-text">
+                    <span class="eyebrow">Our Impact</span>
+                    <h3>Every Event Creates Real Change</h3>
+                    <p>
+                        We organise fundraising events to support homeless families, children, youth mental health
+                        programs and people facing financial hardship. Ticket proceeds, donations and auction bids
+                        are directed into practical community support programs across Australia.
+                    </p>
+                    <ul class="impact-list">
+                        <li>💡 Shelter support for families in need</li>
+                        <li>💡 Food bank supplies for local communities</li>
+                        <li>💡 Youth mental health outreach services</li>
+                        <li>💡 After‑school tutoring grants for children</li>
+                        <li>💡 Winter relief supplies for vulnerable people</li>
+                    </ul>
+                </div>
+                <div class="impact-images">
+                    <img src="https://picsum.photos/id/1063/700/500" alt="Community impact" data-lightbox>
+                    <img src="https://picsum.photos/id/1068/700/500" alt="Charity support" data-lightbox>
+                </div>
+            </div>
+        </section>
+        <!-- TESTIMONIALS -->
+        <section class="testimonials-section">
+            <div class="section-head">
+                <h3>What Our Community Says</h3>
+                <p>Hear from volunteers and participants who joined our events.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/id/1005/100/100" alt="Sarah">
+                        <div>
+                            <h4>Sarah M.</h4>
+                            <p>Volunteer, Sydney</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"I joined the Fun Run last year and it was such a rewarding experience. Seeing families receive support after the event made all the early mornings worth it."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/id/1012/100/100" alt="James">
+                        <div>
+                            <h4>James L.</h4>
+                            <p>Participant, Melbourne</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The Gala Dinner was beautifully organised. It felt great to dress up for a good cause, and I loved meeting other people who care about the community."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-author">
+                        <img src="https://picsum.photos/id/1025/100/100" alt="Emma">
+                        <div>
+                            <h4>Emma R.</h4>
+                            <p>Donor, Brisbane</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"I donated at the Silent Auction and got a wonderful painting. Knowing my money went to winter shelter supplies made it even more special."</p>
+                </div>
+            </div>
+        </section>
+        <!-- PARTNERS -->
+        <section class="partners-section">
+            <div class="section-head">
+                <h3>Our Community Partners</h3>
+                <p>We work with local organisations to deliver maximum impact.</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo"><img src="https://picsum.photos/id/1/200/80" alt="Partner 1"></div>
+                <div class="partner-logo"><img src="https://picsum.photos/id/2/200/80" alt="Partner 2"></div>
+                <div class="partner-logo"><img src="https://picsum.photos/id/3/200/80" alt="Partner 3"></div>
+                <div class="partner-logo"><img src="https://picsum.photos/id/4/200/80" alt="Partner 4"></div>
+                <div class="partner-logo"><img src="https://picsum.photos/id/5/200/80" alt="Partner 5"></div>
+            </div>
+        </section>
+        <!-- NEWS -->
+        <section class="news-section">
+            <div class="section-head">
+                <h3>Latest News & Updates</h3>
+                <p>Stay up to date with our latest community work.</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://picsum.photos/id/1070/600/400" alt="News 1">
+                    <div class="news-card-body">
+                        <p class="news-date">September 15, 2026</p>
+                        <h4>Fun Run Raises Over $12k for Homeless Children</h4>
+                        <p>Our annual City Hope Fun Run was a huge success, with over 500 participants joining on a beautiful spring morning.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://picsum.photos/id/1073/600/400" alt="News 2">
+                    <div class="news-card-body">
+                        <p class="news-date">September 10, 2026</p>
+                        <h4>New Youth Mental Health Program Launched</h4>
+                        <p>Thanks to concert ticket sales, we are expanding our youth mental health outreach services to three new cities.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://picsum.photos/id/1076/600/400" alt="News 3">
+                    <div class="news-card-body">
+                        <p class="news-date">September 5, 2026</p>
+                        <h4>Winter Donation Drive Kicks Off</h4>
+                        <p>We are collecting blankets, warm clothes and heating kits for people experiencing homelessness this winter.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ORGANISER -->
+        <section id="organiser" class="organiser-section">
+            <div class="organiser-card">
+                <div class="organiser-media">
+                    <img src="https://picsum.photos/id/1071/900/600" alt="Organiser" data-lightbox>
+                </div>
+                <div class="organiser-info">
+                    <span class="eyebrow">Meet the Organiser</span>
+                    <h3>Hope For Community</h3>
+                    <p>
+                        We raise funds to support homeless families and children in local communities.
+                        Since our first event, we have helped thousands of people access emergency shelter,
+                        meals, school support and mental health services.
+                    </p>
+                    <div class="organiser-contact">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <div>
+                                <p>Email</p>
+                                <strong>contact@hopecommunity.org</strong>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <div>
+                                <p>Phone</p>
+                                <strong>02‑5555‑1111</strong>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <div>
+                                <p>Location</p>
+                                <strong>Australia</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 预览弹窗 -->
+        <div class="event-modal" id="eventModal">
+            <div class="event-modal-inner">
+                <button class="modal-close" id="modalClose">×</button>
+                <div class="modal-content">
+                    <div class="modal-img">
+                        <img id="modalImage" src="" alt="">
+                    </div>
+                    <div class="modal-info">
+                        <h3 id="modalTitle"></h3>
+                        <p id="modalDesc"></p>
+                        <div class="modal-meta">
+                            <p>Date: <span id="modalDate"></span></p>
+                            <p>Location: <span id="modalLocation"></span></p>
+                            <p>Price: <span id="modalPrice"></span></p>
+                        </div>
+                        <a href="" id="modalDetailLink" class="btn btn-primary">View Full Event Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Hope Community Charity</h4>
+                <p>Supporting vulnerable families across Australia through community fundraising events.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./search.html">Search Events</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./impact.html">Our Impact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Event Categories</h4>
+                <ul>
+                    <li><a href="./search.html?cat_id=1">Fun Run</a></li>
+                    <li><a href="./search.html?cat_id=2">Gala Dinner</a></li>
+                    <li><a href="./search.html?cat_id=3">Silent Auction</a></li>
+                    <li><a href="./search.html?cat_id=4">Charity Concert</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📧 contact@hopecommunity.org</p>
+                <p>📞 02‑5555‑1111</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Hope Community Charity — All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="btn-backtop" id="backToTop" title="Back to top">↑</button>
+    <script type="module" src="./js/home.js"></script>
+</body>
+</html>
