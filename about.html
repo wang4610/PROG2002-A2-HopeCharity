@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Hope Community Charity</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="brand-logo">HC</span>
+                <div class="brand-text">
+                    <h1>Hope Community Charity</h1>
+                    <p>Connecting people to meaningful causes</p>
+                </div>
+            </div>
+            <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./search.html">Search Events</a></li>
+                <li><a href="./about.html" class="active-page">About Us</a></li>
+                <li><a href="./impact.html">Our Impact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="breadcrumb">
+        <a href="./index.html">Home</a>
+        <span class="sep">/</span>
+        <span>About Us</span>
+    </div>
+
+    <main>
+        <section class="about-hero">
+            <img src="https://picsum.photos/id/1070/1600/500" alt="Our team" data-lightbox>
+        </section>
+
+        <section class="about-content">
+            <div class="about-grid">
+                <div>
+                    <h3>Our Story</h3>
+                    <p>Hope For Community was founded in 2018 by a group of local volunteers who wanted to make a tangible difference for people experiencing homelessness and financial hardship. What started as a small community food drive has grown into a nationwide charity that organises annual fun runs, gala dinners, silent auctions and charity concerts.</p>
+                    <p>Today, we work with 12 community partners across 6 major Australian cities, and have raised over $1.28 million to support thousands of families and children in need.</p>
+                </div>
+                <img src="https://picsum.photos/id/1073/700/500" alt="Volunteers" data-lightbox>
+            </div>
+
+            <div class="about-grid">
+                <img src="https://picsum.photos/id/1076/700/500" alt="Community support" data-lightbox>
+                <div>
+                    <h3>Our Mission & Values</h3>
+                    <p>Our mission is to bring communities together through accessible, welcoming charity events that raise funds and awareness for vulnerable groups. We believe everyone should have access to safe shelter, warm meals, education support and mental health services.</p>
+                    <p>Our core values are: compassion, transparency, community partnership, and integrity. 100% of event ticket proceeds and donations go directly to frontline support programs.</p>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <h3>Meet Our Team</h3>
+                <p>The dedicated people who make every event possible.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://picsum.photos/id/1005/400/400" alt="Team 1">
+                    <div class="team-card-body">
+                        <h4>Emily Watson</h4>
+                        <p>Executive Director</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://picsum.photos/id/1012/400/400" alt="Team 2">
+                    <div class="team-card-body">
+                        <h4>Michael Chen</h4>
+                        <p>Events Manager</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://picsum.photos/id/1025/400/400" alt="Team 3">
+                    <div class="team-card-body">
+                        <h4>Sarah Rodriguez</h4>
+                        <p>Community Outreach Lead</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://picsum.photos/id/1035/400/400" alt="Team 4">
+                    <div class="team-card-body">
+                        <h4>James Wilson</h4>
+                        <p>Volunteer Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Hope Community Charity</h4>
+                <p>Supporting vulnerable families across Australia through community fundraising events.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./search.html">Search Events</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./impact.html">Our Impact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Event Categories</h4>
+                <ul>
+                    <li><a href="./search.html?cat_id=1">Fun Run</a></li>
+                    <li><a href="./search.html?cat_id=2">Gala Dinner</a></li>
+                    <li><a href="./search.html?cat_id=3">Silent Auction</a></li>
+                    <li><a href="./search.html?cat_id=4">Charity Concert</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📧 contact@hopecommunity.org</p>
+                <p>📞 02-5555-1111</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Hope Community Charity — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="btn-backtop" id="backToTop" title="Back to top">↑</button>
+    <script type="module">
+        import { initNavbarScroll, initHamburgerMenu, initBackToTop, initLightbox } from './js/ui-components.js';
+        window.addEventListener("DOMContentLoaded", () => {
+            initNavbarScroll();
+            initHamburgerMenu();
+            initBackToTop();
+            initLightbox();
+        });
+    </script>
+</body>
+</html>
