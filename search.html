@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Events | Hope Community Charity</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="brand-logo">HC</span>
+                <div class="brand-text">
+                    <h1>Hope Community Charity</h1>
+                    <p>Connecting people to meaningful causes</p>
+                </div>
+            </div>
+            <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./search.html" class="active-page">Search Events</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./impact.html">Our Impact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="breadcrumb"></div>
+    <main class="search-page">
+        <section class="search-hero">
+            <img src="https://picsum.photos/id/1054/1600/400" alt="Search charity events" data-lightbox>
+            <div class="search-hero-overlay"></div>
+            <div class="search-hero-content">
+                <h2>Search & Filter Charity Events</h2>
+                <p>Find events by date, location or category.</p>
+            </div>
+        </section>
+        <section class="search-toolbar">
+            <div class="search-form-card">
+                <form id="search-event-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="filter-date">Event Date</label>
+                            <select id="filter-date">
+                                <option value="all">All Dates</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-location">Location</label>
+                            <select id="filter-location">
+                                <option value="all">All Locations</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-cat">Event Category</label>
+                            <select id="filter-cat">
+                                <option value="all">All Categories</option>
+                            </select>
+                        </div>
+                        <!-- 这里：原来滑块删掉，换成价格下拉框 -->
+                        <div class="form-group price-group">
+                            <label for="filter-price">Maximum Ticket Price</label>
+                            <select id="filter-price">
+                                <option value="">Any Price</option>
+                                <!-- JS从后端数据库真实价格动态填充选项 -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <div class="form-checkboxes">
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="only-upcoming">
+                                <span>Show only upcoming events</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" id="only-free">
+                                <span>Show only free events</span>
+                            </label>
+                        </div>
+                        <div class="form-buttons">
+                            <button class="btn btn-primary" type="submit">Search Events</button>
+                            <button class="btn btn-secondary" type="button" id="btn-clear-filters">Reset Filters</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="search-result-summary">
+                <div>
+                    <h3>Search Results</h3>
+                    <p id="result-count-text">Use the filters to find charity events.</p>
+                </div>
+                <div class="result-actions">
+                    <select id="sort-events">
+                        <option value="date-asc">Date: Upcoming first</option>
+                        <option value="date-desc">Date: Latest first</option>
+                        <option value="price-low">Price: Low to high</option>
+                        <option value="price-high">Price: High to low</option>
+                        <option value="progress">Most progress</option>
+                    </select>
+                </div>
+            </div>
+            <div id="filter-chips-wrap" class="filter-chips-wrap"></div>
+        </section>
+        <section class="search-results-section">
+            <div id="error-box"></div>
+            <div id="skeleton-search-wrap" class="event-grid"></div>
+            <div id="search-result-grid" class="event-grid"></div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Hope Community Charity</h4>
+                <p>Supporting vulnerable families across Australia through community fundraising events.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./search.html">Search Events</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./impact.html">Our Impact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Event Categories</h4>
+                <ul>
+                    <li><a href="./search.html?cat_id=1">Fun Run</a></li>
+                    <li><a href="./search.html?cat_id=2">Gala Dinner</a></li>
+                    <li><a href="./search.html?cat_id=3">Silent Auction</a></li>
+                    <li><a href="./search.html?cat_id=4">Charity Concert</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📧 contact@hopecommunity.org</p>
+                <p>📞 02‑5555‑1111</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Hope Community Charity — All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="btn-backtop" id="backToTop" title="Back to top">↑</button>
+    <script type="module" src="./js/search.js"></script>
+</body>
+</html>
